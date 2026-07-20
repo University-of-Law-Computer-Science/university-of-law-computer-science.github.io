@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Northgate Roman Coin Hoard",
+    "period": "Roman",
+    "category": "Coins & Currency",
+    "circa_year": 300,
+    "year_acquired": 1961,
+    "description": "A hoard of 47 bronze and silver coins discovered during roadworks near the old north gate, dating from the 2nd to 4th century AD. Provides evidence of sustained Roman activity in the area. On display in the Ground Floor Roman Gallery.",
+    "on_display": true
+  },
+  {
+    "id": 2,
+    "title": "Medieval Pilgrim Badge",
+    "period": "Medieval",
+    "category": "Personal Effects",
+    "circa_year": 1350,
+    "year_acquired": 1988,
+    "description": "A small lead-alloy badge depicting a local saint, worn by pilgrims travelling through the area in the 14th century. Found during excavation of the old market square. On display in the Ground Floor Medieval Gallery.",
+    "on_display": true
+  },
+  {
+    "id": 3,
+    "title": "Tudor Merchant's Ledger",
+    "period": "Tudor",
+    "category": "Documents",
+    "circa_year": 1553,
+    "year_acquired": 1972,
+    "description": "A hand-bound ledger belonging to a local wool merchant, recording transactions between 1547 and 1559. One of the earliest surviving business records from the town. Held in the archive store and available by request.",
+    "on_display": false
+  },
+  {
+    "id": 4,
+    "title": "Georgian Sampler",
+    "period": "Georgian",
+    "category": "Textiles",
+    "circa_year": 1782,
+    "year_acquired": 1990,
+    "description": "An embroidered sampler stitched by a local schoolgirl in 1782, featuring alphabets, verse, and a depiction of Northgate House itself. On display in the First Floor Georgian Room.",
+    "on_display": true
+  },
+  {
+    "id": 5,
+    "title": "Georgian Apothecary Cabinet",
+    "period": "Georgian",
+    "category": "Tools & Trade",
+    "circa_year": 1805,
+    "year_acquired": 1965,
+    "description": "A mahogany apothecary's cabinet complete with glass bottles and hand-labelled drawers, used by a local chemist practising in the town from 1795 to 1820. On display in the First Floor Georgian Room.",
+    "on_display": true
+  },
+  {
+    "id": 6,
+    "title": "Victorian Fire Brigade Helmet",
+    "period": "Victorian",
+    "category": "Tools & Trade",
+    "circa_year": 1868,
+    "year_acquired": 1979,
+    "description": "A brass ceremonial helmet worn by the town's first organised fire brigade, formed in 1868. Donated by a descendant of the brigade's founding captain. On display in the First Floor Victorian Gallery.",
+    "on_display": true
+  },
+  {
+    "id": 7,
+    "title": "Victorian Domestic Photograph Album",
+    "period": "Victorian",
+    "category": "Domestic Life",
+    "circa_year": 1885,
+    "year_acquired": 2001,
+    "description": "A family photograph album spanning the 1870s to 1890s, offering a rare visual record of everyday domestic life in the town during the period. Held in the archive store and available by request.",
+    "on_display": false
+  },
+  {
+    "id": 8,
+    "title": "Edwardian Grocer's Scales",
+    "period": "20th Century",
+    "category": "Tools & Trade",
+    "circa_year": 1930,
+    "year_acquired": 1994,
+    "description": "A set of brass counter scales from a long-closed local grocer's shop, in use from around 1905 until the shop's closure in the 1960s. On display in the Second Floor 20th Century Gallery.",
+    "on_display": true
+  },
+  {
+    "id": 9,
+    "title": "Wartime Ration Book",
+    "period": "20th Century",
+    "category": "Documents",
+    "circa_year": 1943,
+    "year_acquired": 1985,
+    "description": "An unused ration book issued to a local resident in 1943, part of a small collection documenting the town's experience of rationing during the Second World War. On display in the Second Floor 20th Century Gallery.",
+    "on_display": true
+  },
+  {
+    "id": 10,
+    "title": "1950s Television Set",
+    "period": "20th Century",
+    "category": "Domestic Life",
+    "circa_year": 1955,
+    "year_acquired": 2010,
+    "description": "One of the first television sets owned in the town, donated by the original owner's family. A popular exhibit for visitors recalling the arrival of television in everyday homes. On display in the Second Floor 20th Century Gallery.",
+    "on_display": true
+  }
+]

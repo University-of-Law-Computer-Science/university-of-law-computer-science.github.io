@@ -1,0 +1,15 @@
+<svg width="460" height="120" viewBox="0 0 460 120" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Pixel and Brew - Standard Logo</title>
+<desc>Standard logo for Pixel and Brew featuring dice icon and organisation name</desc>
+<g transform="translate(15, 12)">
+  <circle cx="48" cy="48" r="48" fill="#2D1B69"/>
+  <rect x="16" y="16" width="64" height="64" rx="12" fill="#FAFAFA"/>
+  <circle cx="32" cy="32" r="6" fill="#2D1B69"/>
+  <circle cx="48" cy="48" r="6" fill="#2D1B69"/>
+  <circle cx="64" cy="64" r="6" fill="#2D1B69"/>
+  <circle cx="64" cy="32" r="6" fill="#C93D09"/>
+  <circle cx="32" cy="64" r="6" fill="#0A7B6C"/>
+</g>
+<text x="140" y="52" font-family="Nunito, Fredoka One, sans-serif" font-size="36" font-weight="700" fill="#2D1B69" letter-spacing="1">Pixel &amp; Brew</text>
+<text x="140" y="84" font-family="Nunito, sans-serif" font-size="18" font-weight="400" fill="#1A1A1A" letter-spacing="3">INDEPENDENT GAMES CAFÉ</text>
+</svg>

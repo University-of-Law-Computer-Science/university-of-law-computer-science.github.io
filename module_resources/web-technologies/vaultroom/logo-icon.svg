@@ -1,0 +1,10 @@
+<svg width="150" height="150" viewBox="0 0 150 150" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>The Vaultroom - Icon</title>
+<desc>Icon only version of The Vaultroom logo - a keyhole within a dark circle</desc>
+<circle cx="75" cy="75" r="75" fill="#1A1A2E"/>
+<circle cx="75" cy="60" r="24" fill="#F5F5F5"/>
+<path d="M54 74 C54 57 96 57 96 74 C96 85 87 92 87 92 L63 92 C63 92 54 85 54 74Z" fill="#F5F5F5"/>
+<rect x="60" y="92" width="30" height="22" rx="3" fill="#F5F5F5"/>
+<circle cx="75" cy="60" r="11" fill="#1A1A2E"/>
+<circle cx="75" cy="60" r="4" fill="#9E7C28"/>
+</svg>

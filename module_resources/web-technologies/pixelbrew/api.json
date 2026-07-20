@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Codebreakers",
+    "category": "Party",
+    "vibe": "Social",
+    "duration_mins": 30,
+    "max_players": 8,
+    "description": "A fast, loud word-guessing party game for 2 to 8 players, perfect for a table of friends and a round of drinks. New players pick it up in minutes.",
+    "available": true
+  },
+  {
+    "id": 2,
+    "title": "Fortress of Ashwood",
+    "category": "Strategy",
+    "vibe": "Strategic",
+    "duration_mins": 90,
+    "max_players": 4,
+    "description": "A deep castle-building strategy game for 2 to 4 players, with resource management and shifting alliances. One of our most requested games for a proper strategy session.",
+    "available": true
+  },
+  {
+    "id": 3,
+    "title": "Deep Sea Rescue",
+    "category": "Cooperative",
+    "vibe": "Chill",
+    "duration_mins": 45,
+    "max_players": 5,
+    "description": "A cooperative game for 1 to 5 players — work together to chart a sinking submarine and rescue the crew before time runs out. Fully cooperative, win or lose as a team.",
+    "available": true
+  },
+  {
+    "id": 4,
+    "title": "Wildcard Wagers",
+    "category": "Card Game",
+    "vibe": "Competitive",
+    "duration_mins": 20,
+    "max_players": 6,
+    "description": "A quick, bluff-heavy card game for 3 to 6 players, with a lot of table talk and betrayal. A great starter game while you wait for a table.",
+    "available": true
+  },
+  {
+    "id": 5,
+    "title": "Retro Arcade: Neon Runner",
+    "category": "Retro Video Game",
+    "vibe": "Competitive",
+    "duration_mins": 15,
+    "max_players": 2,
+    "description": "A classic side-scrolling arcade cabinet favourite for 1 to 2 players, restored and ready to play. Chase the local high score board.",
+    "available": true
+  },
+  {
+    "id": 6,
+    "title": "Trade Winds",
+    "category": "Strategy",
+    "vibe": "Strategic",
+    "duration_mins": 75,
+    "max_players": 5,
+    "description": "A trading and route-building strategy game for 2 to 5 players across a map of island ports. Currently out of rotation while we replace some missing pieces.",
+    "available": false
+  },
+  {
+    "id": 7,
+    "title": "Quickfire Quiz Night Deck",
+    "category": "Party",
+    "vibe": "Social",
+    "duration_mins": 30,
+    "max_players": 12,
+    "description": "Our house quiz deck for 4 to 12 players, used for regular quiz nights but also available to play any time as a large-group party game.",
+    "available": true
+  },
+  {
+    "id": 8,
+    "title": "Retro Arcade: Pixel Fighters",
+    "category": "Retro Video Game",
+    "vibe": "Competitive",
+    "duration_mins": 15,
+    "max_players": 2,
+    "description": "A head-to-head retro fighting cabinet for 1 to 2 players, a café favourite for a quick competitive match between rounds of other games.",
+    "available": true
+  },
+  {
+    "id": 9,
+    "title": "Mystery at Blackwood Manor",
+    "category": "Cooperative",
+    "vibe": "Chill",
+    "duration_mins": 60,
+    "max_players": 6,
+    "description": "A cooperative mystery-solving game for 3 to 6 players, where the table works together to piece together clues across a branching story. Best with a full table.",
+    "available": true
+  },
+  {
+    "id": 10,
+    "title": "Last Card Standing",
+    "category": "Card Game",
+    "vibe": "Competitive",
+    "duration_mins": 25,
+    "max_players": 8,
+    "description": "A fast elimination-style card game for 2 to 8 players, easy to teach and hard to put down. Temporarily retired while we replace a damaged deck.",
+    "available": false
+  }
+]

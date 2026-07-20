@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "River Corridor Clean-Up",
+    "category": "Community Clean-Up",
+    "date": "2025-10-11",
+    "duration_hours": 3,
+    "spaces_available": 8,
+    "description": "Join us at 9:00am at Greenway Park, North Entrance (GW1 2AB) for a morning of litter picking and habitat clearance along the river corridor. Equipment and refreshments provided. Suitable for all fitness levels.",
+    "family_friendly": true
+  },
+  {
+    "id": 2,
+    "title": "Native Tree Planting Day",
+    "category": "Conservation",
+    "date": "2025-10-19",
+    "duration_hours": 3,
+    "spaces_available": 15,
+    "description": "Meet at 10:00am at the Community Allotment, East Side (GW2 4CD) to help plant 50 native tree saplings as part of our long-term woodland restoration project. Training provided on the day. Wear sturdy boots and weather-appropriate clothing.",
+    "family_friendly": true
+  },
+  {
+    "id": 3,
+    "title": "Autumn Wildlife Survey",
+    "category": "Wildlife Survey",
+    "date": "2025-10-26",
+    "duration_hours": 4,
+    "spaces_available": 12,
+    "description": "Starting 8:00am at Northfield Meadow (GW3 1EF), assist our ecologists in recording seasonal wildlife. No prior experience necessary — full guidance provided. Data collected contributes to our annual biodiversity report.",
+    "family_friendly": false
+  },
+  {
+    "id": 4,
+    "title": "Schools Sustainability Workshop",
+    "category": "Education",
+    "date": "2025-11-02",
+    "duration_hours": 2,
+    "spaces_available": 6,
+    "description": "From 1:00pm at Greenway Community Hall (GW1 5GH), we're looking for volunteers to assist with our afternoon sustainability workshop for local primary school children aged 7-11. Activities include composting demonstrations, seed planting, and nature crafts.",
+    "family_friendly": true
+  },
+  {
+    "id": 5,
+    "title": "Hedgerow Restoration Project",
+    "category": "Conservation",
+    "date": "2025-11-08",
+    "duration_hours": 3.5,
+    "spaces_available": 10,
+    "description": "Meet at 9:30am at Greenway Park, West Boundary (GW1 2AB) to help restore and extend the ancient hedgerow along the western boundary. Tasks include planting, weaving, and general maintenance. A great opportunity to learn traditional countryside skills.",
+    "family_friendly": false
+  },
+  {
+    "id": 6,
+    "title": "Annual Charity Fundraising Walk",
+    "category": "Fundraising",
+    "date": "2025-11-15",
+    "duration_hours": 2,
+    "spaces_available": 50,
+    "description": "Starting 10:00am from Greenway Park Main Car Park (GW1 2AB), take part in our annual 5km sponsored walk through the park and surrounding nature trails. All money raised supports our conservation and education programmes. Families and dogs welcome.",
+    "family_friendly": true
+  },
+  {
+    "id": 7,
+    "title": "Winter Pond Maintenance",
+    "category": "Conservation",
+    "date": "2025-11-22",
+    "duration_hours": 3,
+    "spaces_available": 8,
+    "description": "From 9:00am at Eastfield Nature Reserve (GW4 3IJ), help maintain and improve the habitat around our two wildlife ponds ahead of winter. Tasks include removing invasive species, clearing margins, and installing new signage. Waders provided.",
+    "family_friendly": false
+  },
+  {
+    "id": 8,
+    "title": "Community Composting Workshop",
+    "category": "Education",
+    "date": "2025-11-29",
+    "duration_hours": 1.5,
+    "spaces_available": 20,
+    "description": "Starting 11:00am at Greenway Community Hall (GW1 5GH), learn how to set up and maintain a home composting system in this practical workshop run by our education team. Participants will take home a starter composting kit. Suitable for all ages.",
+    "family_friendly": true
+  },
+  {
+    "id": 9,
+    "title": "Town Centre Litter Pick",
+    "category": "Community Clean-Up",
+    "date": "2025-12-06",
+    "duration_hours": 2,
+    "spaces_available": 25,
+    "description": "Meet at 10:00am at the Town Centre Meeting Point, High Street (GW5 1KL) for our monthly litter pick in partnership with the local council. Equipment provided. A great way to make a visible difference to your local area in just a couple of hours.",
+    "family_friendly": true
+  },
+  {
+    "id": 10,
+    "title": "Winter Bird Survey",
+    "category": "Wildlife Survey",
+    "date": "2025-12-13",
+    "duration_hours": 3,
+    "spaces_available": 10,
+    "description": "Starting 8:30am at Northfield Meadow (GW3 1EF), help record winter bird populations as part of our ongoing biodiversity monitoring programme. Binoculars available to borrow. All experience levels welcome.",
+    "family_friendly": false
+  }
+]

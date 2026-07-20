@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "The Cartographer's Curse",
+    "difficulty": "Medium",
+    "theme_category": "Historical Adventure",
+    "capacity": 6,
+    "price_per_person": 28,
+    "description": "A vanished explorer, a cursed map, and 60 minutes to chart a way out before the room seals itself forever. Suitable for those new to escape rooms looking for a step up.",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Blackout Bunker",
+    "difficulty": "Hard",
+    "theme_category": "Heist & Thriller",
+    "capacity": 5,
+    "price_per_person": 30,
+    "description": "Trapped in a decommissioned bunker as the lights fail one by one, your team has 60 minutes to restore power and decode the final transmission before time runs out.",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "The Undertaker's Vault",
+    "difficulty": "Expert",
+    "theme_category": "Horror",
+    "capacity": 4,
+    "price_per_person": 32,
+    "description": "Locked inside a forgotten funeral parlour for 75 minutes, uncover the truth behind the undertaker's disappearance. Our most demanding room, recommended for experienced teams only. Currently closed for prop refurbishment.",
+    "available": false
+  },
+  {
+    "id": 4,
+    "name": "Whispering Asylum",
+    "difficulty": "Hard",
+    "theme_category": "Horror",
+    "capacity": 5,
+    "price_per_person": 30,
+    "description": "Something was left behind in the old asylum's east wing. You have 60 minutes to navigate flickering corridors and unsettling clues before the whispers catch up with you.",
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "The Alchemist's Study",
+    "difficulty": "Easy",
+    "theme_category": "Sci-Fi & Fantasy",
+    "capacity": 6,
+    "price_per_person": 25,
+    "description": "An eccentric alchemist has vanished mid-experiment, leaving behind bubbling potions and mechanical puzzles to solve within 45 minutes. A gentle introduction to escape rooms, ideal for first-timers and families.",
+    "available": true
+  },
+  {
+    "id": 6,
+    "name": "Heist at Midnight",
+    "difficulty": "Medium",
+    "theme_category": "Heist & Thriller",
+    "capacity": 6,
+    "price_per_person": 28,
+    "description": "Crack the vault, dodge the security systems, and make your escape within 60 minutes before the guards return from their rounds. A fast-paced favourite for groups and corporate teams.",
+    "available": true
+  },
+  {
+    "id": 7,
+    "name": "The Lighthouse Keeper's Secret",
+    "difficulty": "Medium",
+    "theme_category": "Mystery",
+    "capacity": 5,
+    "price_per_person": 28,
+    "description": "The keeper hasn't been seen in weeks and the light has gone dark. You have 60 minutes to search the tower for answers before the tide turns and the room locks for good.",
+    "available": true
+  },
+  {
+    "id": 8,
+    "name": "Cursed Carnival",
+    "difficulty": "Hard",
+    "theme_category": "Horror",
+    "capacity": 6,
+    "price_per_person": 30,
+    "description": "The carnival closed decades ago but the games never stopped. Work through unsettling attractions and hidden mechanisms within 60 minutes to escape before the lights go out. Currently closed for prop refurbishment.",
+    "available": false
+  },
+  {
+    "id": 9,
+    "name": "The Final Transmission",
+    "difficulty": "Expert",
+    "theme_category": "Sci-Fi & Fantasy",
+    "capacity": 4,
+    "price_per_person": 32,
+    "description": "Adrift on a failing spacecraft, restore life support and send one last message home within 75 minutes. Our most technically demanding room, built for seasoned puzzle solvers.",
+    "available": true
+  },
+  {
+    "id": 10,
+    "name": "Escape the Speakeasy",
+    "difficulty": "Easy",
+    "theme_category": "Historical Adventure",
+    "capacity": 6,
+    "price_per_person": 25,
+    "description": "A raid is coming and the password has been forgotten. You have 45 minutes to charm, bluff, and puzzle your way out of the hidden speakeasy before the doors are sealed.",
+    "available": true
+  }
+]

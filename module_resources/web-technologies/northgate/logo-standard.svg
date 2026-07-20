@@ -1,0 +1,15 @@
+<svg width="460" height="120" viewBox="0 0 460 120" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Northgate Museum of Local History - Standard Logo</title>
+<desc>Standard logo for Northgate Museum featuring archway icon and organisation name</desc>
+<g transform="translate(15, 10)">
+  <circle cx="50" cy="50" r="50" fill="#5C3D2E"/>
+  <rect x="20" y="68" width="60" height="25" fill="#FAF7F2"/>
+  <path d="M20 68 L20 42 Q20 16 50 16 Q80 16 80 42 L80 68 Z" fill="#FAF7F2"/>
+  <path d="M31 68 L31 44 Q31 27 50 27 Q69 27 69 44 L69 68 Z" fill="#5C3D2E"/>
+  <rect x="16" y="65" width="68" height="5" rx="1" fill="#6B4E06"/>
+  <rect x="12" y="87" width="76" height="5" rx="1" fill="#6B4E06"/>
+  <rect x="42" y="70" width="16" height="22" rx="1" fill="#6B4E06"/>
+</g>
+<text x="135" y="52" font-family="Playfair Display, Georgia, serif" font-size="32" font-weight="700" fill="#5C3D2E" letter-spacing="1">Northgate Museum</text>
+<text x="135" y="84" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="400" fill="#1C1C1C" letter-spacing="2">OF LOCAL HISTORY</text>
+</svg>

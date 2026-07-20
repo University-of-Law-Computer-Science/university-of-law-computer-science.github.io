@@ -1,0 +1,11 @@
+<svg width="150" height="150" viewBox="0 0 150 150" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Pixel and Brew - Icon</title>
+<desc>Icon only version of the Pixel and Brew logo - a dice within a purple circle</desc>
+<circle cx="75" cy="75" r="75" fill="#2D1B69"/>
+<rect x="22" y="22" width="106" height="106" rx="18" fill="#FAFAFA"/>
+<circle cx="48" cy="48" r="10" fill="#2D1B69"/>
+<circle cx="75" cy="75" r="10" fill="#2D1B69"/>
+<circle cx="102" cy="102" r="10" fill="#2D1B69"/>
+<circle cx="102" cy="48" r="10" fill="#C93D09"/>
+<circle cx="48" cy="102" r="10" fill="#0A7B6C"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="150" height="150" viewBox="0 0 150 150" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Northgate Museum of Local History - Icon</title>
+<desc>Icon only version of the Northgate Museum logo - an archway within a brown circle</desc>
+<circle cx="75" cy="75" r="75" fill="#5C3D2E"/>
+<rect x="28" y="100" width="94" height="36" fill="#FAF7F2"/>
+<path d="M28 100 L28 58 Q28 18 75 18 Q122 18 122 58 L122 100 Z" fill="#FAF7F2"/>
+<path d="M44 100 L44 62 Q44 34 75 34 Q106 34 106 62 L106 100 Z" fill="#5C3D2E"/>
+<rect x="22" y="95" width="106" height="8" rx="1" fill="#6B4E06"/>
+<rect x="16" y="128" width="118" height="7" rx="1" fill="#6B4E06"/>
+<rect x="62" y="103" width="26" height="33" rx="1" fill="#6B4E06"/>
+</svg>
