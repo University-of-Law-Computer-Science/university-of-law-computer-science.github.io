@@ -7,22 +7,36 @@
 <meta name="description" content="Interactive teaching tools and simulators from the Computer Science team — browse by tool or by module.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<script>
+  (function () {
+    var saved = localStorage.getItem('cs-tools-theme');
+    document.documentElement.setAttribute('data-theme', saved === 'dark' ? 'dark' : 'light');
+  })();
+</script>
+<script src="https://university-of-law-computer-science.github.io/assets/theme.js"></script>
+<script src="https://university-of-law-computer-science.github.io/assets/terminal.js"></script>
+<link rel="stylesheet" href="https://university-of-law-computer-science.github.io/assets/styles.css">
 </head>
 <body>
 
 <nav class="topnav">
   <div class="wrap">
-    <a class="brand" href="index.html">
+    <a class="brand" href="https://university-of-law-computer-science.github.io/index.html">
       <span>~/ulaw-cs-tools</span><span class="cursor"></span>
     </a>
-    <div class="crumbs"><span class="here">/</span></div>
+    <div class="nav-right">
+      <div class="crumbs"><span class="here">/</span></div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-icon moon">🌙</span>
+        <span class="theme-icon sun">☀️</span>
+      </button>
+    </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-    <p class="eyebrow">// THE UNIVERSITY OF LAW - COMPUTER SCIENCE · TEACHING TOOLS</p>
+    <p class="eyebrow">// THE UNIVERSITY OF LAW - SCHOOL OF COMPUTING AND AI · TEACHING TOOLS</p>
     <h1>Find the tool for your module — or just browse.</h1>
     <p class="lede">Interactive simulators, labs, and learning platforms built for our modules. Everything here runs in your browser, nothing to install.</p>
 
@@ -34,8 +48,8 @@
       <div class="body">
         <div class="promptline"><span class="accent">student@ulaw-cs-tools</span> ~ % ls</div>
         <div class="out" data-type-target='[
-          "[dir]tools/[/dir]      general, module-independent tools",
-          "[dir]modules/[/dir]    per-module tool collections",
+          "[dir]tools/[/dir]      platforms and utilities that work across modules",
+          "[dir]modules/[/dir]    per-module resource collections",
           "",
           "pick one below \u2193"
         ]'></div>
@@ -55,23 +69,22 @@
       <p class="section-desc">Tools that aren't tied to a single module — useful across your whole course.</p>
 
       <div class="grid">
-
-        <!-- TODO: replace href with the real published URL for the CS Web Teaching Platform -->
-        <a class="card" href="#" data-tool="wtp">
-          <span class="path">/tools/wtp/</span>
+        <a class="card" href="https://university-of-law-computer-science.github.io/tools/WTP/" data-tool="wtp">
+          <span class="path">/tools/WTP/</span>
           <h3>CS Web Teaching Platform</h3>
-          <p>Interactive HTML, CSS, JS and Python lesson environment with a live code editor and browser-based execution.</p>
-          <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">Python</span></div>
+          <p>Interactive lesson environment with a live code editor and browser-based execution.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
           <span class="arrow">↗</span>
         </a>
 
-        <!-- Placeholder slot — duplicate this card for each additional module-independent tool -->
-        <div class="card placeholder">
-          <span class="status soon">coming soon</span>
-          <span class="path">/tools/…</span>
-          <h3>Add your next tool here</h3>
-          <p>Duplicate this card and point it at a new tool that isn't specific to one module.</p>
-        </div>
+        <!-- Placeholder slot — duplicate this card for each additional module-independent tool
+        <div class="card" href="https://university-of-law-computer-science.github.io/tools/[CODE]">
+          <span class="path">/tools/[CODE]</span>
+          <h3>Tool Name</h3>
+          <p>Tool description goes here.</p>
+          <div class="tags">Replace this text with the appropriate tags.</div>
+          <span class="arrow">↗</span>
+        -->
 
       </div>
     </div>
@@ -86,46 +99,21 @@
       <p class="section-desc">Tools grouped by the module they belong to. Open a module to see everything built for it.</p>
 
       <div class="grid">
-
-        <a class="card module" href="modules/os-and-networking.html">
-          <span class="status live">live</span>
-          <span class="path">/modules/os-and-networking/</span>
-          <h3>Operating Systems &amp; Networking</h3>
-          <p>Boot process, scheduling, memory, file systems, OSI/TCP-IP, subnetting and more — one interactive platform.</p>
-          <span class="arrow">↗</span>
-        </a>
-
-        <a class="card module" href="modules/web-technologies.html">
-          <span class="status live">live</span>
-          <span class="path">/modules/web-technologies/</span>
+        <a class="card module" href="https://university-of-law-computer-science.github.io/modules/CSCI71585">
+          <span class="path">/modules/CSCI71585/</span>
           <h3>Web Technologies</h3>
-          <p>The Web Teaching Platform's HTML, CSS and JavaScript lessons, plus anything module-specific.</p>
+          <p>Learn HTML, CSS, and JavaScript to build modern web applications.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
           <span class="arrow">↗</span>
         </a>
-
-        <a class="card module" href="modules/digital-cybercrime.html">
-          <span class="status soon">in progress</span>
-          <span class="path">/modules/digital-cybercrime/</span>
-          <h3>Digital Cybercrime</h3>
-          <p>Labs and scenario tools covering AI's role in cybercrime, non-hosted models, and crime-category case studies.</p>
+        <!-- Placeholder slot — duplicate this card for each additional module
+        <div class="card module" href="https://university-of-law-computer-science.github.io/modules/[CODE]">
+          <span class="path">/modules/[CODE]</span>
+          <h3>Module Name</h3>
+          <p>Module description goes here.</p>
+          <div class="tags">Replace this text with the appropriate tags.</div>
           <span class="arrow">↗</span>
-        </a>
-
-        <a class="card module" href="modules/cyber-forensics.html">
-          <span class="status soon">in progress</span>
-          <span class="path">/modules/cyber-forensics/</span>
-          <h3>Cyber Forensic Investigation</h3>
-          <p>Forensic analysis labs using CFReDS, Wireshark PCAPs and ALEAPP-based datasets.</p>
-          <span class="arrow">↗</span>
-        </a>
-
-        <!-- Placeholder slot — duplicate this card for each additional module -->
-        <div class="card placeholder module">
-          <span class="status soon">coming soon</span>
-          <span class="path">/modules/…</span>
-          <h3>Add your next module here</h3>
-          <p>Duplicate this card and create a matching page under /modules/ using the template.</p>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -135,11 +123,9 @@
 
 <footer>
   <div class="wrap">
-    <span>The University of Law - Computer Science — teaching tools</span>
-    <span>Built and maintained by the ULaw Computer Science Department</span>
+    <span>The University of Law - School of Computing and AI — teaching tools</span>
+    <span>Built and maintained by the ULaw School of Computing and AI</span>
   </div>
 </footer>
-
-<script src="assets/terminal.js"></script>
 </body>
 </html>

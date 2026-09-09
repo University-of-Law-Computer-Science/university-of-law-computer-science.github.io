@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson | CS WTP</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/ulaw-logo.svg">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/unit-list.css">
+    <link rel="stylesheet" href="css/lesson.css">
+
+    <!-- Prism.js Theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <!-- JSZip for creating zip files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- Piodide for Python execution -->
+     <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/monokai.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css">
+
+    <!-- CodeMirror Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+
+    <!-- CodeMirror Language Modes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js"></script>
+</head>
+<body>
+    <!-- Lesson Container (full screen, no header/footer) -->
+    <div class="lesson-container">
+        
+        <!-- Top Navigation Bar -->
+        <nav class="lesson-nav">
+            <div class="nav-left">
+                <a href="index.html" class="nav-btn home-btn">
+                    <img src="assets/icons/home.svg" alt="Home" class="nav-icon">
+                </a>
+                <button class="nav-btn" id="menuBtn" aria-label="Menu">
+                    <span class="hamburger-icon">☰</span>
+                </button>
+            </div>
+            
+            <div class="nav-center">
+                <h1 class="lesson-unit-title">
+                    <!-- Populated by JS -->
+                </h1>
+            </div>
+            
+            <div class="nav-right">
+                <button class="nav-btn" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span id="darkModeIcon" class="theme-icon">◐</span>
+                </button>
+                <button class="nav-btn nav-arrow" id="prevLesson" aria-label="Previous Lesson">←</button>
+                <button class="nav-btn nav-arrow" id="nextLesson" aria-label="Next Lesson">→</button>
+            </div>
+        </nav>
+
+        <!-- Unified Sidebar -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="sidebar-title">Menu</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            
+            <!-- Sidebar Tabs -->
+            <div class="sidebar-tabs">
+                <button class="sidebar-tab active" data-tab="lessons">Lessons</button>
+                <button class="sidebar-tab" data-tab="reference">Reference</button>
+                <button class="sidebar-tab" data-tab="hints">Hints</button>
+            </div>
+            
+            <!-- Sidebar Content -->
+            <div class="sidebar-content">
+                <!-- Lessons Tab -->
+                <div class="sidebar-panel active" id="lessonsPanel">
+                    <div class="unit-info-sidebar">
+                        <h3 class="unit-title-sidebar" id="sidebarUnitTitle">Unit Title</h3>
+                        <p class="unit-description-sidebar" id="sidebarUnitDescription">Unit description goes here</p>
+                    </div>
+                    <ul class="lesson-list" id="lessonListSidebar">
+                        <!-- Populated by JS -->
+                    </ul>
+                    <div class="sidebar-actions">
+                        <a href="#" class="sidebar-btn" id="backToUnitsBtn">← Back to Units</a>
+                        <button class="sidebar-btn btn-danger" id="resetUnitBtnSidebar">Reset Unit Progress</button>
+                    </div>
+                </div>
+                
+                <!-- Reference Tab -->
+                <div class="sidebar-panel" id="referencePanel">
+                    <div class="reference-tabs-sidebar">
+                        <button class="reference-tab-sidebar active" data-ref="html">HTML</button>
+                        <button class="reference-tab-sidebar" data-ref="css">CSS</button>
+                        <button class="reference-tab-sidebar" data-ref="js">JS</button>
+                        <button class="reference-tab-sidebar" data-ref="links">Links</button>
+                    </div>
+                    
+                    <div class="reference-content-sidebar">
+                        <!-- HTML Reference -->
+                        <div class="reference-section-sidebar active" id="htmlReferenceSidebar">
+                            <h4>Common HTML Tags</h4>
+                            <dl class="reference-list">
+                                <dt>&lt;h1&gt; to &lt;h6&gt;</dt>
+                                <dd>Headings (h1 is largest, h6 is smallest)</dd>
+                                
+                                <dt>&lt;p&gt;</dt>
+                                <dd>Paragraph</dd>
+                                
+                                <dt>&lt;a href=""&gt;</dt>
+                                <dd>Link</dd>
+                                
+                                <dt>&lt;img src="" alt=""&gt;</dt>
+                                <dd>Image</dd>
+                                
+                                <dt>&lt;div&gt;</dt>
+                                <dd>Container/division</dd>
+                                
+                                <dt>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</dt>
+                                <dd>Lists (unordered, ordered, list item)</dd>
+                            </dl>
+                        </div>
+                        
+                        <!-- CSS Reference -->
+                        <div class="reference-section-sidebar" id="cssReferenceSidebar">
+                            <h4>Common CSS Properties</h4>
+                            <dl class="reference-list">
+                                <dt>color</dt>
+                                <dd>Text colour</dd>
+                                
+                                <dt>background-color</dt>
+                                <dd>Background colour</dd>
+                                
+                                <dt>font-size</dt>
+                                <dd>Text size</dd>
+                                
+                                <dt>padding</dt>
+                                <dd>Inner spacing</dd>
+                                
+                                <dt>margin</dt>
+                                <dd>Outer spacing</dd>
+                                
+                                <dt>border</dt>
+                                <dd>Border around element</dd>
+                            </dl>
+                        </div>
+                        
+                        <!-- JS Reference -->
+                        <div class="reference-section-sidebar" id="jsReferenceSidebar">
+                            <h4>JavaScript Basics</h4>
+                            <dl class="reference-list">
+                                <dt>console.log()</dt>
+                                <dd>Print to console</dd>
+                                
+                                <dt>let, const</dt>
+                                <dd>Declare variables</dd>
+                                
+                                <dt>document.querySelector()</dt>
+                                <dd>Select HTML element</dd>
+                                
+                                <dt>addEventListener()</dt>
+                                <dd>Listen for events (clicks, etc.)</dd>
+                            </dl>
+                        </div>
+                        
+                        <!-- Useful Links -->
+                        <div class="reference-section-sidebar" id="linksReferenceSidebar">
+                            <h4>Useful Web Development Resources</h4>
+                            
+                            <div class="links-category">
+                                <h5>Official Documentation</h5>
+                                <ul class="links-list">
+                                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">MDN Web Docs</a> - Comprehensive web development documentation</li>
+                                    <li><a href="https://www.w3.org/" target="_blank" rel="noopener">W3C</a> - Web standards organization</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="links-category">
+                                <h5>Learning Resources</h5>
+                                <ul class="links-list">
+                                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a> - Tutorials and references</li>
+                                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a> - CSS tutorials and guides</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="links-category">
+                                <h5>Tools & Testing</h5>
+                                <ul class="links-list">
+                                    <li><a href="https://caniuse.com/" target="_blank" rel="noopener">Can I Use</a> - Browser compatibility tables</li>
+                                    <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">HTML Validator</a> - Check your HTML code</li>
+                                    <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">CSS Validator</a> - Check your CSS code</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="links-category">
+                                <h5>Community & Help</h5>
+                                <ul class="links-list">
+                                    <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a> - Q&A for developers</li>
+                                    <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> - Code hosting and collaboration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hints Tab -->
+                <div class="sidebar-panel" id="hintsPanel">
+                    <div class="hints-content" id="hintsSidebarContent">
+                        <!-- Populated with all hints from current lesson -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lesson-content-area">
+            <!-- Instruction Panel -->
+            <div class="instruction-panel" id="instructionPanel">
+                <div class="instruction-header-bar">
+                    <span class="instruction-header-title">Instructions</span>
+                    <button class="instruction-collapse-btn" id="instructionCollapseBtn" aria-label="Collapse instructions">
+                        <span id="instructionCollapseIcon">◀</span>
+                    </button>
+                </div>
+                
+                <div class="instruction-content">
+                    <div class="instruction-body">
+                        <!-- Completion Notice Banner -->
+                        <div class="completion-notice hidden" id="completionNotice">
+                            ✓ You've completed this lesson. You can still edit and save your work.
+                        </div>
+                        
+                        <div class="instruction-text">
+                            <!-- Instruction content loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editor and Preview Area -->
+            <div class="workspace">
+                
+                <!-- Editor and Preview Panes -->
+                <div class="workspace-panes">
+                    
+                    <!-- Editor Pane -->
+                    <div class="editor-pane">
+                        <!-- Editor Tabs -->
+                        <div class="editor-tabs">
+                            <button class="editor-tab active" data-editor="html">HTML (index.html)</button>
+                            <button class="editor-tab" data-editor="css">CSS (styles.css)</button>
+                            <button class="editor-tab" data-editor="js">JavaScript (script.js)</button>
+
+                            <!-- Save Indicator -->
+                            <div class="save-indicator" id="saveIndicator">
+                                <span class="save-status">●</span>
+                                <span class="save-text">Saved</span>
+                            </div>
+                            
+                            <!-- Download Button -->
+                            <button class="editor-control-btn" id="saveCodeBtn" title="Download your code as files">
+                                <span>↓</span>
+                                <span>Download</span>
+                            </button>
+                        </div>
+                        
+                        <textarea id="htmlEditor" class="code-editor" spellcheck="false" placeholder="Write your HTML here..."></textarea>
+
+                        <textarea id="cssEditor" class="code-editor" style="display: none;" spellcheck="false" placeholder="Write your CSS here..."></textarea>
+
+                        <textarea id="jsEditor" class="code-editor" style="display: none;" spellcheck="false" placeholder="Write your JavaScript here..."></textarea>
+                    </div>
+                    <!-- Python Editor (Hidden by Default) -->
+                    <div class="python-editor-container" id="pythonEditorContainer" style="display: none;">
+                        <div class="editor-tabs">
+                            <button class="editor-tab active">Python (main.py)</button>
+                            <div class="save-indicator" id="pythonSaveIndicator">
+                                <span class="save-status">●</span>
+                                <span class="save-text">Saved</span>
+                            </div>
+                            <!-- Add Download Button -->
+                            <button class="editor-control-btn" id="downloadPythonBtn" title="Download your Python code">
+                                <span>↓</span>
+                                <span>Download</span>
+                            </button>
+                        </div>
+                        <textarea id="pythonEditor" class="code-editor" spellcheck="false"></textarea>
+                    </div>
+                    
+                    <!-- Preview Pane -->
+                    <div class="preview-pane">
+                        <div class="preview-label">
+                            <span>Preview</span>
+                            <div class="preview-controls">
+                                <button class="preview-control-btn" id="fullscreenBtn" title="Fullscreen preview">
+                                    <span class="fullscreen-icon">⛶</span>
+                                    <span class="fullscreen-text">Fullscreen</span>
+                                </button>
+                                <button class="preview-popout" id="popoutBtn">
+                                    <span class="popout-icon">↗</span>
+                                    <span class="popout-text">Pop Out</span>
+                                </button>
+                            </div>
+                        </div>
+                        <iframe id="preview" class="preview-frame"></iframe>
+                    </div>
+                    <!-- Python Output Console (Hidden by Default) -->
+                    <div class="python-output-panel" id="pythonOutputPanel" style="display: none;">
+                        <div class="output-label">
+                            <span>Output</span>
+                            <div class="output-controls">
+                                <button class="preview-control-btn" id="runPythonBtn">
+                                    <span>▶</span>
+                                    <span>Run Code (Shift+Enter)</span>
+                                </button>
+                                <button class="preview-control-btn" id="stopPythonBtn" style="display: none;">
+                                    <span>⏹</span>
+                                    <span>Stop</span>
+                                </button>
+                                <button class="preview-control-btn" id="clearOutputBtn">
+                                    <span>✕</span>
+                                    <span>Clear</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="console-input-bar">
+                            <span class="input-prefix">></span>
+                            <input type="text" id="consoleInput" class="console-input-field" placeholder="Program input..." disabled>
+                        </div>
+                        <div class="output-console" id="outputConsole">
+                            <div class="output-placeholder">Click "Run Code" to execute your Python code</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Footer Bar (new) -->
+        <div class="action-footer">
+            <!-- <div class="action-left">
+                <button class="btn" id="hintBtn" title="Show hints for this lesson">Hint</button>
+                <button class="btn" id="referenceBtn" title="Open reference guide">Reference</button>
+            </div> -->
+            
+            <div class="action-center">
+                <div class="lesson-progress" id="lessonProgress">
+                    <!-- Progress info will be inserted here -->
+                </div>
+            </div>
+            
+            <div class="action-right">
+                <button class="btn btn-success action-btn" id="completeBtn">Mark Complete (Ctrl+Enter)</button>
+            </div>
+        </div>
+    </div>
+    <!-- Confirmation Modal -->
+    <div class="modal-overlay" id="confirmModal">
+        <div class="modal confirm-modal">
+            <div class="modal-header">
+                <h3 id="confirmTitle">Confirm Action</h3>
+                <button class="modal-close" id="closeConfirmModal">×</button>
+            </div>
+            <div class="modal-content">
+                <p id="confirmMessage">Are you sure?</p>
+            </div>
+            <div class="confirm-actions">
+                <button class="btn btn-secondary" id="confirmCancel">Cancel</button>
+                <button class="btn btn-success" id="confirmOk">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <!-- Next Lesson Modal -->
+    <div class="modal-overlay" id="nextLessonModal">
+        <div class="modal next-lesson-modal">
+            <div class="modal-header success-header">
+                <h3>Lesson Complete!</h3>
+                <button class="modal-close" id="closeNextLessonModal">×</button>
+            </div>
+            <div class="modal-content">
+                <p class="completion-message">Great work! You've completed this lesson.</p>
+                <div class="next-lesson-info">
+                    <p class="next-lesson-label">Up Next:</p>
+                    <p class="next-lesson-title" id="nextLessonTitle"><!-- Next lesson title --></p>
+                </div>
+            </div>
+            <div class="modal-actions next-lesson-actions">
+                <button class="btn btn-secondary" id="nextLessonStay">Stay Here</button>
+                <button class="btn btn-success" id="nextLessonGo">Next Lesson →</button>
+            </div>
+        </div>
+    </div>
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+    <!-- Fullscreen Preview Overlay -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <div class="fullscreen-header">
+            <span class="fullscreen-title">Preview</span>
+            <button class="fullscreen-close" id="fullscreenClose">✕ Close (Esc)</button>
+        </div>
+        <div class="fullscreen-preview-container">
+            <iframe id="fullscreenPreview" class="fullscreen-preview"></iframe>
+        </div>
+    </div>
+    <!-- Prism.js Core and Language Components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+    <script src="js/lesson-ui.js"></script>
+    <script src="js/lesson.js"></script>
+</body>
+</html>
