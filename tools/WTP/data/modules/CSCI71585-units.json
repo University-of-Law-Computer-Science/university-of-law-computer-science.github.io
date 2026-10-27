@@ -9,7 +9,7 @@
       "description": "In this unit, we will cover the basics of HTML, the foundational language of the web. You'll learn how to structure web pages using various HTML tags and elements according to semantic principles, and understand how to create content that can be displayed in a web browser.",
       "week": 2,
       "unlockDate": "2026-10-26",
-      "lessonCount": 8,
+      "lessonCount": 11,
       "technologies": ["HTML"],
       "lessonsFile": "data/lessons/CSCI71585/unit-2/lessons.json"
     },
